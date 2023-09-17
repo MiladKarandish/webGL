@@ -1,0 +1,22 @@
+{
+  "name": "esbuild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/app.js --bundle --outfile=dist/app.js --loader:.html=text",
+    "watch": "esbuild src/app.js --outfile=dist/app.js  --bundle --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.12.5"
+  },
+  "dependencies": {
+    "gl-matrix": "^3.4.3",
+    "localforage": "^1.10.0",
+    "randomcolor": "^0.6.2"
+  }
+}
